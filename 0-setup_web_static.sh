@@ -32,5 +32,5 @@ sudo mkdir -p /data/web_static/shared/ /data/web_static/releases/test/
 echo $'<html>\n\t<head>\n\t</head>\n\t<body>\n\t\tHolberton School\n\t</body>\n</html>' | sudo tee /data/web_static/releases/test/index.html
 sudo ln -sf /data/web_static/releases/test /data/web_static/current
 sudo chown -hR ubuntu:ubuntu /data/
-sudo echo -e "$config" > /etc/nginx/sites-available/default
+sudo echo -e "$config" | sudo tee /etc/nginx/sites-available/default
 sudo service nginx restart
