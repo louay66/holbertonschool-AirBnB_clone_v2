@@ -24,7 +24,7 @@ def c_is(text):
     """return  C and  text if text is containt (_)replace
     space"""
     CleanText = text.replace("_", " ")
-    return "C {}".format(text)
+    return "C {}".format(CleanText)
 
 
 if __name__ == '__main__':
