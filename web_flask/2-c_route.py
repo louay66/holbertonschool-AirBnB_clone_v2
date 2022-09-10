@@ -21,7 +21,8 @@ def HBNB():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_is(text):
-    """return c and the text"""
+    """return  C and  text if text is containt (_)replace
+    space"""
     CleanText = text.replace('_', ' ')
     return f"C {CleanText}"
 
