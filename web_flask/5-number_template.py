@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ first flask file
     """
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
@@ -47,7 +47,7 @@ def number_n(n):
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
-    """ if (n) is int return file html """
+    """ if (n) is int display file html """
     return render_template('5-number.html', n=n)
 
 
