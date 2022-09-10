@@ -20,11 +20,12 @@ def HBNB():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def C_is(text):
-    """return  C and  text if text is containt (_)replace
-    space"""
-    CleanText = text.replace("_", " ")
-    return f"C {CleanText}"
+def C_page(text):
+    """Displays 'C (text variable with spaces instead of _'s)'
+        upon visiting /c/<text> page
+        (text is optional)"""
+    text = text.replace("_", " ")
+    return "C {}".format(text)
 
 
 if __name__ == '__main__':
