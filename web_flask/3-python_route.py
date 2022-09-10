@@ -23,7 +23,7 @@ def HBNB():
 def c_is(text):
     """ return c and the text """
     CleanText = text.replace('_', ' ')
-    return f"C {CleanText}"
+    return "C {}".format(CleanText)
 
 
 @app.route('/python/', strict_slashes=False)
@@ -36,7 +36,7 @@ def python():
 def python_is(text):
     """ return python and text """
     CleanText = text.replace('_', ' ')
-    return f"Python {CleanText}"
+    return "Python {}".format(CleanText)
 
 
 if __name__ == '__main__':
