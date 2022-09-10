@@ -23,8 +23,8 @@ def HBNB():
 def c_is(text):
     """return  C and  text if text is containt (_)replace
     space"""
-    CleanText = text.replace("_", " ")
-    return f"C {CleanText}"
+    text = text.replace("_", " ")
+    return "C {}".format(text)
 
 
 if __name__ == '__main__':
