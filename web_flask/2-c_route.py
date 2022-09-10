@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ first flask file
-    """
+"""
 from flask import Flask
 
 
@@ -21,7 +21,7 @@ def HBNB():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_is(text):
-    """ return c and the text """
+    """return c and the text"""
     CleanText = text.replace('_', ' ')
     return f"C {CleanText}"
 
