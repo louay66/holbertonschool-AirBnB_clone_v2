@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ first flask file
     """
-from flask import Flask
+from flask import Flask, render_template
 from models import storage
 from models.state import State
 
